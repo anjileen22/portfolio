@@ -1,0 +1,322 @@
+/* CSS Rest */
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+/* Links */
+a, a:visited {
+	color: #26345a;
+	text-decoration: none;
+}
+
+/* Links hover */
+a:hover {
+	color: #9fc5e8;
+}
+
+/* Paragraph font */
+p {
+	font-size: 17px;
+	line-height: 1.7;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Heading 1 */
+h1 {
+	font-size: 34px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Heading 1 banner font */
+h1#banner {
+	text-shadow: 2px 1px 6px #000000;
+	padding-top: 1.2em;
+	color: #ffffff;
+	
+}
+
+/* Heading 2 */
+h2 {
+	font-family: Bitter, serif;
+}
+
+/* Heading 3 */
+h3 {
+	font-size: 17px;
+	line-height: 1.5;
+	font-family: Bitter, serif;
+	color: #363636;
+	font-weight: 400;
+}
+
+/* Bold font */
+.bold {
+	font-weight: 700;
+}
+
+/* Nav container */
+.navcontainer {
+	width: 100%;
+	display: block;
+	padding: 0.5em 0;
+	background: #4F7CAC;
+	min-height: 75px;
+}
+
+/* Nav group */
+.navgroup {
+	width: 90%;
+	margin: auto;
+}
+	
+/* Logo */
+.logo {
+	width: auto;
+	float: left;
+	color: #fff;
+	font-family: 'Kalam', serif;
+	font-size: 26px;
+	padding-top: 0.6em;
+	font-weight: 700;
+}
+	
+/* Navigation */	
+nav.nav {
+	font-family: 'Open Sans', sans;
+	min-height: 55px;
+	z-index: 5000;
+	width: 100%;
+	height: 100%;
+	right:  0;
+	top: 0;
+}
+
+/* Navigation link */
+nav.nav a {
+	float: left;
+	display: block;
+	font-family: 'Kalam', serif;
+	color: #000;
+	text-align: center;
+	padding: 0.5em 2em 0.5em 2em;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.nav a.icon {
+	font-size: 26px;
+}
+
+/* Navigation link hover */
+nav.nav a:hover {
+	
+}
+
+/* Mobile nav */
+#mobilenav {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	top: 0;
+	right: 0;
+	padding-top: 25px;
+}
+
+#mobilenav a {
+	display: block; 
+	width: 100%;
+	padding: 0.5em 1em 0.5em 1em;
+	text-align: left;
+}
+
+/* Nav close button */
+a.closebtn {
+	font-size: 40px !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 0.5em 0.5em 0.5em !important;
+}
+
+/* Hide the mobile nav toggle icon */
+nav.nav a.icon {
+	display: none;
+}
+
+/* Hamburger menu */
+.nav a.icon {
+	position: absolute;
+	right: 0;
+	color: #fff;
+	width: auto;
+}
+
+nav.nav a.icon {
+	display: block;
+}
+
+/* Header */
+header.header {
+	background: linear-gradient(to right,#3C474B 0%,#3C474B 70%,#C0E0DE 70%,#C0E0DE 100%);
+	color: #000;
+	text-align: center;
+	height: auto;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+}
+
+/* Main content */
+main {
+	padding: 0.5em 1em 0.5em 1em;
+	min-height: 55vh;
+	background: #f3f6f4;
+}
+
+main a {
+	text-decoration: underline;
+}
+
+/* Column container */
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+#header {
+	padding: 3% 0;
+	background: linear-gradient(to right,#292d33 0%,#292d33 70%,#9fc5e8 70%,#9fc5e8 100%);
+}
+
+/* Left column */
+.leftcolumn {
+	display: flex;
+	flex: 50%; 
+	align-items: center;
+	background-color: #292d33; 
+	padding: 4%; 
+	margin: 2% 0;
+}
+
+.leftcolumn img {
+	width: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+	flex: 50%; 
+	background-color: #fff; 
+	padding: 4%;
+	margin: 2% 0;
+	text-align: left;
+}
+
+/* Left column main */
+.leftcolmain {
+	float: left; 
+	width: 50%;
+	padding: 0 4%; 
+	margin: 3% 0;
+	text-align: center;
+}
+
+/* Right column main */
+.rightcolmain {
+	float: right; 
+	width: 50%;
+	padding: 0 4%;
+	margin: 3% 0;
+	text-align: center;
+}
+
+/* Header Button */
+.headerbutton {
+	width: 30%;
+	border: 1px solid #000;
+	padding: 2%;
+	text-align: center;
+	color: #292d33;
+	font-family: 'Kalam', serif;
+}
+
+/* Main button */
+button#website {
+	background: #4f7cac;
+	color: #fff;
+	font-size: 16px;
+	padding: 1em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+button#website:hover {
+	background: #292d33;
+	color: #fff;
+}
+
+/* Footer */
+footer.footer {
+	padding: 0.5em 1em 0.5em 1em;
+	background: #3c474b;
+}
+
+/* Footer paragraph font */
+footer p {
+	font-size: 13px;
+	color: #fff;
+	text-align: center;
+}
+
+/* Flex 100% */
+.flex100 {
+	flex-basis: 100%;
+}
+
+/* Portfolio grid */
+.portfolio {
+	
+}
+
+#grid img {
+	background: #d4d4d4;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 750px) {
+.rightcolmain, .leftcolmain {
+	float: none;
+	width: 100%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+.row {   
+	flex-direction: column;
+	}
+
+nav.nav a {
+	padding: 0.5em 2em 0.5em 2em;
+	}
+
+nav.nav {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	#mobilenav {
+		width: 30%;
+		border-left: 2px solid #000;
+}
+}
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!-- Meta tags -->
+		<meta charset="utf-8">
+		<title>Portfolio Anjileen Daji</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Web Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Linking Stylesheet -->
+		<link rel="stylesheet" href="./style.css">
+	</head>
+	
+	<body>
+	
+	<div class="navcontainer">
+	<div class="navgroup">
+	<div class="logo">
+	Anjileen Daji
+	</div>
+	
+	<nav class="nav"> <!-- Navigation -->
+		<div id="mobilenav"> <!-- Mobile navigation -->
+			<a href="javascript:void(0);" class="closebtn" onclick="closeNav()">&times;</a>
+			<br>
+			<a href="/index.html">Home</a>
+			<a target="_blank" href="https://airbnb.anjileen.com">Airbnb Website</a>
+			<a target="_blank" href="https://restaurant.anjileen.com">Restaurant Website</a>
+			<a target="_blank" href="https://photography.anjileen.com">Photography Website</a>
+			<a target="_blank" href="https://www.digitalcandy.co.nz">Freelance Website</a>
+		</div> <!-- End mobile navigation -->
+			
+		<a href="javascript:void(0);" class="icon" onclick="navToggle()">
+		Menu <i class="fa fa-bars"></i></a>
+		</nav> <!-- End navigation -->
+		</div> <!-- End navgroup -->
+		</div><!-- End nav container -->
+		
+		<header class="header"> <!-- Header -->
+			<div class="row" id="header">
+			<div class="leftcolumn">
+			<img src="./computer.jpg">
+			</div>
+			<div class="rightcolumn">
+			<h1>Portfolio</h1>
+			<br><br>
+			<p>Hi, my name's Anjileen and I have a passion for coding and design!<br><br>
+			Here are some of my recent projects, including work from my Diploma in Web Development and Design through Open Polytechnic, as well as some personal projects.
+			Thanks for stopping by!
+			<br><br>
+			</p>
+			<a href="mailto:anjileen@hotmail.com"><div class="headerbutton">
+			Email me
+			</div></a> <!-- End header button -->
+			</div>
+			</div>
+		</header> <!-- End header -->
+		
+		<main> <!-- Main content -->
+			<div class="row"> <!-- Row -->
+			
+			<div class="leftcolmain">
+			
+			<div class="portfolio">
+			<a target="_blank" href="https://airbnb.anjileen.com"><div id="grid"><img src="airbnbthumbnail.png" width="100%"></div></a><br>
+			<a target="_blank" href="https://airbnb.anjileen.com"><button type="button" id="website">View Airbnb Website</button></a>
+			</div>
+			<br><br><br><br>
+			
+			<div class="portfolio">
+			<a target="_blank" href="https://photography.anjileen.com"><div id="grid"><img src="photographythumbnail.png" width="100%"></div></a><br>
+			<a target="_blank" href="https://photography.anjileen.com"><button type="button" id="website">View Photography Website</button></a>
+			</div>
+			<br><br><br><br>
+			
+			</div>
+			
+			<div class="rightcolmain">
+			
+			<div class="portfolio">
+			<a target="_blank" href="https://restaurant.anjileen.com"><div id="grid"><img src="restaurantthumbnail.png" width="100%"></div></a><br>
+			<a target="_blank" href="https://restaurant.anjileen.com"><button type="button" id="website">View Restaurant Website</button></a>
+			</div>
+			<br><br><br><br>
+			
+			<div class="portfolio">
+			<a target="_blank" href="https://digitalcandy.co.nz"><div id="grid"><img src="digitalcandythumbnail.png" width="100%"></div></a><br>
+			<a target="_blank" href="https://digitalcandy.co.nz"><button type="button" id="website">View Freelance Website</button></a>
+			</div>
+			<br><br><br><br>
+			
+			</div>
+			
+			</div> <!-- End row -->
+		</main> <!-- End main content -->
+		
+		<footer class="footer"> <!-- Footer -->
+			<p>Copyright &copy; 2021 Anjileen Daji</p>
+		</footer> <!-- End footer-->
+		
+		<!-- Script for mobile menu toggle -->
+		<script>
+		function navToggle() {
+		  var x = document.getElementById("mobilenav");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+			document.querySelector(".nav a.icon").style.color = "#fff";
+		  } else {
+			x.style.display = "block";
+			document.querySelector(".nav a.icon").style.color = "#000";
+		  }
+		}
+		
+		function closeNav() {
+		document.getElementById("mobilenav").style.display = "none";
+					document.querySelector(".nav a.icon").style.color = "#fff";
+		}
+		</script>
+		
+	</body>
+</html>	
